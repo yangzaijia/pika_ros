@@ -148,13 +148,21 @@ bash can_config.sh
   # bash ~/pika_ros/scripts/start_s5_buffered_10hz_no_fisheye_capture.bash pour
 # pnp_bread_0512 stack_cup
 
+  # conda deactivate
+  # export PATH=/usr/bin:/bin:/usr/sbin:/sbin:$PATH
+  # unset PYTHONHOME
+  # unset PYTHONPATH
+  # source /opt/ros/noetic/setup.zsh
+  # source ~/pika_ros/install/setup.zsh
+  # bash ~/pika_ros/scripts/start_s5_buffered_10hz_no_fisheye_capture.bash place_bread_basket
+
   conda deactivate
-  export PATH=/usr/bin:/bin:/usr/sbin:/sbin:$PATH
+  export PATH=/usr/bin:/bin:/usr/sbin:/sbin:$PATHa
   unset PYTHONHOME
   unset PYTHONPATH
   source /opt/ros/noetic/setup.zsh
   source ~/pika_ros/install/setup.zsh
-  bash ~/pika_ros/scripts/start_s5_buffered_10hz_no_fisheye_capture.bash place_bread_basket
+  bash ~/pika_ros/scripts/start_s5_buffered_10hz_no_fisheye_capture.bash pnp_0825
 
 
 
@@ -168,13 +176,21 @@ bash can_config.sh
   # sudo -E bash ~/pika_ros/scripts/start_s6_buffered_10hz_no_fisheye_capture.bash pour
 
 
+  # conda deactivate
+  # export PATH=/usr/bin:/bin:/usr/sbin:/sbin:$PATH
+  # unset PYTHONHOME
+  # unset PYTHONPATH
+  # source /opt/ros/noetic/setup.zsh
+  # source ~/pika_ros/install/setup.zsh
+  # sudo -E bash ~/pika_ros/scripts/start_s6_buffered_10hz_no_fisheye_capture.bash place_bread_basket
+
   conda deactivate
   export PATH=/usr/bin:/bin:/usr/sbin:/sbin:$PATH
   unset PYTHONHOME
   unset PYTHONPATH
   source /opt/ros/noetic/setup.zsh
   source ~/pika_ros/install/setup.zsh
-  sudo -E bash ~/pika_ros/scripts/start_s6_buffered_10hz_no_fisheye_capture.bash place_bread_basket
+  sudo -E bash ~/pika_ros/scripts/start_s6_buffered_10hz_no_fisheye_capture.bash pnp_0825
 
 pnp_bread 123 6 7 删
 
@@ -243,7 +259,7 @@ pnp_bread 123 6 7 删
   unset PYTHONPATH
   source /opt/ros/noetic/setup.zsh
   source ~/pika_ros/install/setup.zsh
-  bash ~/pika_ros/scripts/start_s5_buffered_10hz_no_depth_capture.bash handover_bottle_0609
+  bash ~/pika_ros/scripts/start_s5_buffered_10hz_no_depth_capture.bash pnp_0825
 
 # 终端 6：s6 no_depth
   conda deactivate
@@ -252,7 +268,7 @@ pnp_bread 123 6 7 删
   unset PYTHONPATH
   source /opt/ros/noetic/setup.zsh
   source ~/pika_ros/install/setup.zsh
-  sudo -E bash ~/pika_ros/scripts/start_s6_buffered_10hz_no_depth_capture.bash handover_bottle_0609
+  sudo -E bash ~/pika_ros/scripts/start_s6_buffered_10hz_no_depth_capture.bash pnp_0825
 
 
 
